@@ -1,80 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Bootstrap Compact Gallery</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-  <style>
-    .card {
-      border-radius: 8px;
-      margin-bottom: 20px;
-      overflow: hidden;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-    }
-    .card-img-top {
-      transition: transform 0.2s;
-    }
-    .card:hover .card-img-top {
-      transform: scale(1.1);
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compact Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .card {
+            border-radius: 10px;
+        }
+        .card-body h6, .card-body p {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-  <div class="container mt-4">
-    <h2 class="text-center mb-4">Cards Gallery</h2>
-    <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="card">
-          <a href="images/Image1.jpg" data-caption="Description 1" data-toggle="lightbox" data-gallery="gallery">
-            <img src="images/Image1.jpg" class="card-img-top img-fluid" alt="Image 1">
-          </a>
-          <div class="card-body">
-            <h6 class="text-center">Card 1</h6>
-            <p class="text-center">Details about Card 1.</p>
-          </div>
+    <div class="container mt-5">
+        <h2 class="text-center">Cards Gallery</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image1.jpg" class="card-img-top" alt="Image 1">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 1 Description</h6>
+                        <p class="card-text">Details about image 1.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image2.jpg" class="card-img-top" alt="Image 2">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 2 Description</h6>
+                        <p class="card-text">Details about image 2.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image3.jpg" class="card-img-top" alt="Image 3">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 3 Description</h6>
+                        <p class="card-text">Details about image 3.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image4.jpg" class="card-img-top" alt="Image 4">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 4 Description</h6>
+                        <p class="card-text">Details about image 4.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image5.jpg" class="card-img-top" alt="Image 5">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 5 Description</h6>
+                        <p class="card-text">Details about image 5.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <a href="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" data-lightbox="gallery">
+                        <img src="https://storage.googleapis.com/acciojob-open-file-collections/image6.jpg" class="card-img-top" alt="Image 6">
+                    </a>
+                    <div class="card-body">
+                        <h6 class="card-title">Image 6 Description</h6>
+                        <p class="card-text">Details about image 6.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="card">
-          <a href="images/Image2.jpg" data-caption="Description 2" data-toggle="lightbox" data-gallery="gallery">
-            <img src="images/Image2.jpg" class="card-img-top img-fluid" alt="Image 2">
-          </a>
-          <div class="card-body">
-            <h6 class="text-center">Card 2</h6>
-            <p class="text-center">Details about Card 2.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Repeat similar card structures for all images -->
-      
-      <!-- Example: -->
-      <div class="col-lg-4 col-md-6">
-        <div class="card">
-          <a href="images/Image9.jpg" data-caption="Description 9" data-toggle="lightbox" data-gallery="gallery">
-            <img src="images/Image9.jpg" class="card-img-top img-fluid" alt="Image 9">
-          </a>
-          <div class="card-body">
-            <h6 class="text-center">Card 9</h6>
-            <p class="text-center">Details about Card 9.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-  <script>
-    baguetteBox.run('.row', {
-      animation: 'slideIn'
-    });
-  </script>
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Lightbox JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
 </body>
 </html>
